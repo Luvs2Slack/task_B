@@ -21,7 +21,7 @@ The function will also update the inventory_records (For restocking) for a  give
     '''
     
     # Sales should only happen on non-restocking days
-    if current_day % 7 >= 0:
+    if current_day % 7 != 0:
         # Generate a random sales number between 0 and 200
         daily_sales = random.randint(0, 200)
         
